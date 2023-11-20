@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="styleButton.css">
+  <link rel="stylesheet" href="styleHome.css">
+  <link rel="stylesheet" href="styleAr.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>PROJETO - YOLO</title>
+</head>
+<body>
+  <main class="mainContent">
+    <div class="content">
+      <div class="logo">
+        <img src="yolo-logo.png" alt="logo" class="logoImg" id="logo">
+      </div>
+      <div class="main-content-ar">
+       <div class="iot-btn">
+        <label class="toggle">
+          <input class="toggle-checkbox" type="checkbox">
+          <div class="toggle-switch"></div>
+          <span class="toggle-label">Sala</span>
+        </label>
+        <div class="">
+          <div class="field">
+            <span class="range-btn" id="rangeValue1">17</span>
+            <input class="input-range" type="range" name="" value="0" min="17" max="30" onchange="rangeSlider1(this.value)">
+          </div>
+        </div>
+      </div>
+      <div class="iot-btn">
+        <label class="toggle">
+          <input class="toggle-checkbox" type="checkbox" checked>
+          <div class="toggle-switch"></div>
+          <span class="toggle-label">Quarto</span>
+        </label>
+        <div class="">
+          <div class="field">
+            <span class="range-btn" id="rangeValue2">17</span>
+            <input class="input-range" type="range" name="" value="0" min="17" max="30" onchange="rangeSlider2(this.value)">
+          </div>
+        </div>
+      </div>
+      <div class="iot-btn">
+        <label class="toggle">
+          <input class="toggle-checkbox" type="checkbox" checked>
+          <div class="toggle-switch"></div>
+          <span class="toggle-label">Wi-Fi</span>
+        </label>
+        <div class="">
+          <div class="field">
+            <span class="range-btn" id="rangeValue3">17</span>
+            <input class="input-range" type="range" name="" value="0" min="17" max="30" onchange="rangeSlider3(this.value)">
+          </div>
+        </div>
+        <div>
+          <a href=""><button class="button">Home</button></a>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
+
